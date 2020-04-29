@@ -1,0 +1,16 @@
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.exe
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.deps.json
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.runtimeconfig.json
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.runtimeconfig.dev.json
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\b\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.dll
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\PathUrlProcessor.AssemblyInfoInputs.cache
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\PathUrlProcessor.AssemblyInfo.cs
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\PathUrlProcessor.RazorTargetAssemblyInfo.cache
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\PathUrlProcessor.csproj.CopyComplete
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\staticwebassets\PathUrlProcessor.StaticWebAssets.Manifest.cache
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\staticwebassets\PathUrlProcessor.StaticWebAssets.xml
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\PathUrlProcessor.dll
+C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\.vs\PathUrlProcessor\v16\lut\0\i\PathUrlProcessor\netcoreapp3.1\PathUrlProcessor.genruntimeconfig.cache

@@ -21,7 +21,7 @@ namespace PathUrlProcessor.Services
             if (inputObject.Size > 0)
                 return true;
             // FYI Override ToString Method -- InputObject
-            throw new Exception($"{inputObject.Size} is Invalid for {inputObject}");
+            throw new Exception($"Size - {inputObject.Size} is Invalid for {inputObject}");
         }
 
     }

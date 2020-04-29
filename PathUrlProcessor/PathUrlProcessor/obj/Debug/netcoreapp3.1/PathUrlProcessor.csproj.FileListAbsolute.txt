@@ -7,7 +7,6 @@ C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathU
 C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.runtimeconfig.dev.json
 C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.dll
 C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\bin\Debug\netcoreapp3.1\PathUrlProcessor.pdb
-C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\obj\Debug\netcoreapp3.1\PathUrlProcessor.csprojAssemblyReference.cache
 C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\obj\Debug\netcoreapp3.1\PathUrlProcessor.AssemblyInfoInputs.cache
 C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\obj\Debug\netcoreapp3.1\PathUrlProcessor.AssemblyInfo.cs
 C:\Users\np106735\source\repos\naineshmp\PathUrlProcessor\PathUrlProcessor\PathUrlProcessor\obj\Debug\netcoreapp3.1\PathUrlProcessor.RazorTargetAssemblyInfo.cache

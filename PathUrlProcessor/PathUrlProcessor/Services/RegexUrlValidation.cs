@@ -8,8 +8,7 @@ namespace PathUrlProcessor.Services
     {
         public bool IsValidUrl(InputObject inputObject)
         {
-            const string urlRegexPattern = @"^http(s)?://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?$";
-            if (Regex.IsMatch(inputObject.Url, urlRegexPattern))
+            if (Uri.IsWellFormedUriString(inputObject.Url, UriKind.Absolute))
                 return true;
             throw new Exception($"{inputObject.Url} is Invalid for {inputObject}");
         }
