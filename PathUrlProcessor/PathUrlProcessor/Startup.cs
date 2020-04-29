@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using PathUrlProcessor.Bootstrap;
+using PathUrlProcessor.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace PathUrlProcessor
@@ -22,8 +24,13 @@ namespace PathUrlProcessor
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-
+            services.AddHttpClient();
+            services.AddSingleton<RegexUrlValidation>();
+            services.AddSingleton<SizeValidation>();
+            services.AddSingleton<HttpClientValidation>();
+            services.AddControllers(x =>
+                //Global Exception Handler!
+                x.Filters.Add(typeof(ExceptionHandler)));
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}); });
         }
 

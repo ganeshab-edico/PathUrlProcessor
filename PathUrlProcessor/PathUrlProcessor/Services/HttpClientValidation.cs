@@ -1,21 +1,25 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using PathUrlProcessor.Model;
 
 namespace PathUrlProcessor.Services
 {
     public class HttpClientValidation
     {
-        private HttpClient Client { get; }
+        private IHttpClientFactory ClientFactory { get; }
 
-        public HttpClientValidation(HttpClient client)
+        public HttpClientValidation(IHttpClientFactory client)
         {
-            Client = client;
+            ClientFactory = client;
         }
 
-        public async Task<bool> IsValidUrl(string url)
+        public async Task<bool> IsValidUrl(InputObject inputObject)
         {
-            return (await Client.GetAsync(url)).IsSuccessStatusCode;
+            if ((await ClientFactory.CreateClient().GetAsync(inputObject.Url)).IsSuccessStatusCode)
+                return true;
+            throw new Exception($"{inputObject.Url} is Invalid for {inputObject}");
         }
     }
 }

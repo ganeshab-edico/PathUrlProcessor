@@ -1,16 +1,17 @@
-﻿using System.Net.Http;
-using System.Security.Policy;
+﻿using System;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+using PathUrlProcessor.Model;
 
 namespace PathUrlProcessor.Services
 {
     public class RegexUrlValidation
     {
-        public bool IsValidUrl(string url)
+        public bool IsValidUrl(InputObject inputObject)
         {
             const string urlRegexPattern = @"^http(s)?://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?$";
-            return Regex.IsMatch(url, urlRegexPattern);
+            if (Regex.IsMatch(inputObject.Url, urlRegexPattern))
+                return true;
+            throw new Exception($"{inputObject.Url} is Invalid for {inputObject}");
         }
     }
 }

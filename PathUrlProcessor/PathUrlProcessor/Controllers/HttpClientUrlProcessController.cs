@@ -12,10 +12,12 @@ namespace PathUrlProcessor.Controllers
     public class HttpClientUrlProcessController : ControllerBase
     {
         private HttpClientValidation HttpClientValidation { get; }
+        private SizeValidation SizeValidation { get; }
 
-        public HttpClientUrlProcessController(HttpClientValidation httpClientValidation)
+        public HttpClientUrlProcessController(HttpClientValidation httpClientValidation, SizeValidation sizeValidation)
         {
             HttpClientValidation = httpClientValidation;
+            SizeValidation = sizeValidation;
         }
 
         /// <summary>
@@ -28,9 +30,14 @@ namespace PathUrlProcessor.Controllers
         [HttpPost]
         public JsonResult Post(List<InputObject> inputObjects)
         {
-            if (inputObjects != null && inputObjects.All(x => HttpClientValidation.IsValidUrl(x.Url).Result))
+            //If Any input url in the list is invalid -- IsValidUrl will return exception - which will be logged/handled in global exception filter
+            if (inputObjects != null && inputObjects.All(x =>
+                //URL Validation..
+                HttpClientValidation.IsValidUrl(x).Result &&
+                //Size Validation
+                SizeValidation.isValidSize(x)))
             {
-                return new JsonResult(inputObjects.ToDictionary(x => x.Url, o => new PathValueObject(o.Url, o.Size)));
+                return new JsonResult(inputObjects.ToDictionary(x => x.Path, o => new PathValueObject(o.Url, o.Size)));
             }
 
             return new JsonResult("Bad Request!");

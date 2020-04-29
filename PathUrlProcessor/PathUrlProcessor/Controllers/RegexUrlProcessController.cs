@@ -13,10 +13,12 @@ namespace PathUrlProcessor.Controllers
     public class RegexUrlProcessController : ControllerBase
     {
         private RegexUrlValidation RegexUrlValidation { get; }
+        private SizeValidation SizeValidation { get; }
 
-        public RegexUrlProcessController(RegexUrlValidation regexUrlValidation)
+        public RegexUrlProcessController(RegexUrlValidation regexUrlValidation, SizeValidation sizeValidation)
         {
             RegexUrlValidation = regexUrlValidation;
+            SizeValidation = sizeValidation;
         }
 
         /// <summary>
@@ -29,10 +31,16 @@ namespace PathUrlProcessor.Controllers
         [HttpPost]
         public JsonResult Post(List<InputObject> inputObjects)
         {
-            if (inputObjects != null && inputObjects.All(x => RegexUrlValidation.IsValidUrl(x.Url)))
+            //If Any input url in the list is invalid -- IsValidUrl will return exception - which will be logged/handled in global exception filter
+            if (inputObjects != null && inputObjects.All(x =>
+                //URL Validation..
+                RegexUrlValidation.IsValidUrl(x) &&
+                //Size Validation
+                SizeValidation.isValidSize(x)))
             {
-                return new JsonResult(inputObjects.ToDictionary(x => x.Url, o => new PathValueObject(o.Url, o.Size)));
+                return new JsonResult(inputObjects.ToDictionary(x => x.Path, o => new PathValueObject(o.Url, o.Size)));
             }
+
             return new JsonResult("Bad Request!");
         }
     }
