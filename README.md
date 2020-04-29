@@ -18,3 +18,20 @@ Environment
 - NET Core 3.1 
 
 Steps to RUN --> Simple get the latest version and HIT RUN :P 
+Swagger URL --> https://localhost:44356/swagger
+
+Screenshots: 
+
+Swagger Home: 
+
+![alt text](https://github.com/naineshmp/PathUrlProcessor/blob/master/Swagger%201.JPG)
+
+
+Swagger Request Object:
+
+![alt text](https://github.com/naineshmp/PathUrlProcessor/blob/master/Swagger%20Request%201.JPG)
+
+
+Swagger Response Object:
+
+![alt text](https://github.com/naineshmp/PathUrlProcessor/blob/master/Swagge%20Response%201.JPG)
